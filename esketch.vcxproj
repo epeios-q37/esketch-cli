@@ -21,7 +21,7 @@
   <Import Project="Windows.targets"/>
   <Import Project="Details.props"/>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>88362c84-2b3e-4ece-aa30-cbd88dc0a1de</ProjectGuid>
+    <ProjectGuid>d34111dc-1543-4ad4-9246-361c25610aa4</ProjectGuid>
     <RootNamespace>esketch</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
@@ -42,6 +42,7 @@
     <IncludePath>src/epeios;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
+    <PreBuildEvent/>
     <ClCompile>
       <PreprocessorDefinitions>E_ST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
