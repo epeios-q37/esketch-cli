@@ -8,9 +8,8 @@ artifacts:
 - path: Release/esketch.exe
   
 deploy:
-  tag: 0.0.0
-  release: esketch-v$(appveyor_build_version)
-  description: 'Test'
+  tag: 0.0.1
+  description: 'Other test'
   provider: GitHub
   auth_token:
     secure: kKebvPLjikQbZ7E1Vm8omoYc9K0wOcKxjWsglp3+D4fV9ev/FaWr8ZBI+AseOTis
