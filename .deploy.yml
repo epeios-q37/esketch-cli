@@ -12,7 +12,7 @@ environment:
 before_deploy:
 - mkdir %dir% || exit 1
 - cp %affix%.exe %affix%.xcfg %affix%.xlcl %dir% || exit 1
-- 7z a %dir%.zip dir
+- 7z a %dir%.zip %dir%
 
 artifacts:
 - path: $(dir).zip
