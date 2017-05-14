@@ -1,5 +1,5 @@
 environment:
-  version: 20170513.3
+  version: 20170513.4
   affix: esketch
   dir: $(affix)-cli-$(version)
   zip: $(affix)-cli-win32_$(version).zip
@@ -24,7 +24,7 @@ deploy:
   provider: GitHub
   auth_token:
     secure: kKebvPLjikQbZ7E1Vm8omoYc9K0wOcKxjWsglp3+D4fV9ev/FaWr8ZBI+AseOTis
-  artifact: $(dir).zip
+  artifact: $(zip)
   draft: false
   prerelease: false
 #  on:
