@@ -13,4 +13,6 @@ matrix:
   allow_failures:
   - os: Visual Studio 2017
   
+skip_tags: true
+  
 build: off
