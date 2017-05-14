@@ -1,7 +1,7 @@
 environment:
-  version: 20170513.1
-  affix: esketch
-  dir: $(affix)-$(version)
+  version: 20170513.2
+  affix: esketch-cli
+  dir: $(affix)_$(version)
   
 platform: Win32
 
