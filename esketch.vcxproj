@@ -21,7 +21,7 @@
   <Import Project="Windows.targets"/>
   <Import Project="Details.props"/>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>2a7f4954-6d66-41e3-9503-2cf515531fb4</ProjectGuid>
+    <ProjectGuid>4cb4cd83-c946-42fe-a4da-b799aff4ce43</ProjectGuid>
     <RootNamespace>esketch</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
@@ -43,7 +43,9 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <PreBuildEvent/>
-    <PostBuildEvent/>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) $(ProjectDir)</Command>
+    </PostBuildEvent>
     <ClCompile>
       <PreprocessorDefinitions>E_ST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
