@@ -1,18 +1,18 @@
-environment:
-  version: 20170513.1
-  affix: esketch
-  dir: $(affix)-$(version)
-
 platform: Win32
 
 configuration: Release
 
 os : Visual Studio 2015
 
+environment:
+  version: 20170513.1
+  affix: esketch
+  dir: $(affix)-$(version)
+  
 install:
-- mkdir $(dir)
-- cp $(affix).exe $(affix).xcfg $(affix).xlcl $(dir)
-- 7z a $(dir).zip dir
+- mkdir %dir% || exit 1
+- cp %affix%.exe %affix%.xcfg %affix%.xlcl %dir% || exit 1
+- 7z a %dir%.zip dir
 
 artifacts:
 - path: $(dir).zip
