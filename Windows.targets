@@ -27,6 +27,9 @@
 <!--  <PropertyGroup Label="Configuration">
   <PlatformToolset>v120_xp</PlatformToolset>
  </PropertyGroup> -->
+ <PropertyGroup Label="Configuration">
+  <PlatformToolset>v141</PlatformToolset>
+ </PropertyGroup>
  <PropertyGroup>
   <LinkIncremental Condition="'$(Configuration)'=='Debug'">true</LinkIncremental>
   <LinkIncremental Condition="'$(Configuration)'=='Release'">false</LinkIncremental>
