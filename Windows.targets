@@ -24,9 +24,9 @@
    <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
   </ClCompile>
  </ItemDefinitionGroup>
- <PropertyGroup Label="Configuration">
+<!--  <PropertyGroup Label="Configuration">
   <PlatformToolset>v120_xp</PlatformToolset>
- </PropertyGroup>
+ </PropertyGroup> -->
  <PropertyGroup>
   <LinkIncremental Condition="'$(Configuration)'=='Debug'">true</LinkIncremental>
   <LinkIncremental Condition="'$(Configuration)'=='Release'">false</LinkIncremental>
