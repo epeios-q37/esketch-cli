@@ -1,6 +1,6 @@
 platform:
 - Win32
-- x64
+# - x64
 
 configuration: Release
 
@@ -14,5 +14,8 @@ matrix:
   - os: Visual Studio 2017
   
 skip_tags: true
+
+before_build:
+- devenv esketch.vcxproj /upgrade
   
 # build: off
