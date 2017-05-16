@@ -35,4 +35,5 @@ deploy:
 skip_tags: true
 
 build : off
+deploy: off
 

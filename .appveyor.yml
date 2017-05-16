@@ -15,7 +15,4 @@ matrix:
   
 skip_tags: true
 
-before_build:
-- devenv esketch.vcxproj /upgrade
-  
 # build: off
