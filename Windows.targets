@@ -25,7 +25,7 @@
   </ClCompile>
  </ItemDefinitionGroup>
  <PropertyGroup Label="Configuration">
-  <PlatformToolset>v120</PlatformToolset>
+  <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
  </PropertyGroup>
 <!--  <PropertyGroup Label="Configuration">
   <PlatformToolset>v141</PlatformToolset>
