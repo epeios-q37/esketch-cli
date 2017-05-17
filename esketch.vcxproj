@@ -20,12 +20,12 @@
   </ItemGroup>
   <Import Project="Windows.targets"/>
   <Import Project="Details.props"/>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>1c6ef96b-8d2e-4bc1-b17d-843dfdb1912b</ProjectGuid>
+    <ProjectGuid>6c9fe3de-99a8-401e-8ab3-6748882ec6ea</ProjectGuid>
     <RootNamespace>esketch</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <PropertyGroup Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
   </PropertyGroup>
