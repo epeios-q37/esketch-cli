@@ -4,10 +4,10 @@ platform:
 
 configuration: Release
 
-os :
-- Visual Studio 2013
-- Visual Studio 2015
+image :
 - Visual Studio 2017
+- Visual Studio 2015
+- Visual Studio 2013
 
 # matrix:
   # allow_failures:
@@ -22,7 +22,7 @@ environment:
   dir: $(affix)-cli-$(platform)_$(version)
   zip: $(dir).zip
 
-before_deploy:
+before_build:
 - mkdir %dir% || exit 1
 - cp %affix%.%ext% %dir% || exit 1
 - 7z a %zip% %dir%
@@ -39,8 +39,8 @@ deploy:
   artifact: $(zip)
   draft: false
   prerelease: false
-  on:
-    os: Visual Studio 2013
+  image:
+    image: Visual Studio 2017
     platform: Win32
 
 #  on:
