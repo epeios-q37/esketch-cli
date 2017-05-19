@@ -15,7 +15,14 @@ os :
   
 skip_tags: true
 
-after_build:
+environment:
+  version: 20170519.1
+  affix: esketch
+  ext: exe
+  dir: $(affix)-cli-$(platform)_$(version)
+  zip: $(dir).zip
+
+before_deploy:
 - mkdir %dir% || exit 1
 - cp %affix%.%ext% %dir% || exit 1
 - 7z a %zip% %dir%
