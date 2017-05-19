@@ -16,7 +16,7 @@ image:
 skip_tags: true
 
 environment:
-  version: 20170519.2
+  version: 20170519.3
   affix: esketch
   ext: exe
   dir: $(affix)-cli-$(version)
@@ -24,7 +24,7 @@ environment:
 
 after_build:
 - mkdir %dir% || exit 1
-- cp %affix%.%ext% %dir%\%affix%-%platform%.%ext% || exit 1
+- cp %affix%.%ext% %dir%\%affix%_%platform%.%ext% || exit 1
 - 7z a %zip% %dir%
 
 artifacts:
