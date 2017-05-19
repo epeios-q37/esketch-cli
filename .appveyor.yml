@@ -40,7 +40,7 @@ deploy:
   draft: false
   prerelease: false
   on:
-    image: Visual Studio 2017
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     platform: Win32
 
 #  on:
