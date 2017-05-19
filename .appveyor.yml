@@ -4,7 +4,7 @@ platform:
 
 configuration: Release
 
-image :
+image:
 - Visual Studio 2017
 - Visual Studio 2015
 - Visual Studio 2013
@@ -39,7 +39,7 @@ deploy:
   artifact: $(zip)
   draft: false
   prerelease: false
-  image:
+  on:
     image: Visual Studio 2017
     platform: Win32
 
