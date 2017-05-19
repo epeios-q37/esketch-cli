@@ -41,7 +41,7 @@ deploy:
   prerelease: false
   on:
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-    platform: Win32
+#    platform: Win32
 
 #  on:
 #    branch: master                 # release from master branch only
