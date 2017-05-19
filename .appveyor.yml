@@ -22,7 +22,7 @@ environment:
   dir: $(affix)-cli-$(platform)_$(version)
   zip: $(dir).zip
 
-before_build:
+after_build:
 - mkdir %dir% || exit 1
 - cp %affix%.%ext% %dir% || exit 1
 - 7z a %zip% %dir%
