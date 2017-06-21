@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:xpp="http://q37.info/xppq">
- <ItemDefinitionGroup>
-  <ClCompile>
-   <PreprocessorDefinitions>VERSION="20170620";COPYRIGHT_YEARS="2016";IDENTIFIER="effd756a-a901-46e8-939f-3f2a5e7986b0";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-  </ClCompile>
- </ItemDefinitionGroup>
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>VERSION="";COPYRIGHT_YEARS="2016";IDENTIFIER="5ed24292-5128-4a3a-a374-d37f4c51d488";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
 </Project>
