@@ -4,44 +4,15 @@ platform:
 
 configuration: Release
 
-image:
-- Visual Studio 2017
-- Visual Studio 2015
+os :
 - Visual Studio 2013
+- Visual Studio 2015
+- Visual Studio 2017
+
+test_script:
+- eSketch --version
 
 # matrix:
   # allow_failures:
   # - os: Visual Studio 2017
-  
-skip_tags: true
 
-environment:
-  version: 20170519.3
-  affix: esketch
-  ext: exe
-  dir: $(affix)-cli-$(version)
-  zip: $(platform).zip
-
-after_build:
-- mkdir %dir% || exit 1
-- cp %affix%.%ext% %dir%\%affix%_%platform%.%ext% || exit 1
-- 7z a %zip% %dir%
-
-artifacts:
-- path: $(zip)
-
-deploy:
-  tag: $(version)
-  description: ''
-  provider: GitHub
-  auth_token:
-    secure: kKebvPLjikQbZ7E1Vm8omoYc9K0wOcKxjWsglp3+D4fV9ev/FaWr8ZBI+AseOTis
-  draft: false
-  prerelease: false
-  on:
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-#    platform: Win32
-
-#  on:
-#    branch: master                 # release from master branch only
-#    appveyor_repo_tag: true        # deploy on tag push only
