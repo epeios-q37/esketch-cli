@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <ItemDefinitionGroup>
     <ClCompile>
-      <PreprocessorDefinitions>VERSION="20170620";COPYRIGHT_YEARS="2016";IDENTIFIER="ca8bd58d-669c-4be1-819e-12abac930cb6";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VERSION="20170620";COPYRIGHT_YEARS="2016";IDENTIFIER="60aafdde-5fb3-447c-895f-a2101fc7f3d9";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
 </Project>
