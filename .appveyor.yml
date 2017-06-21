@@ -10,7 +10,7 @@ os :
 - Visual Studio 2017
 
 test_script:
-- eSketch --version
+- esketch --version
 
 # matrix:
   # allow_failures:

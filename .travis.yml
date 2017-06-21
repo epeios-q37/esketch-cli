@@ -12,4 +12,4 @@ language: cpp
 
 script:
 - make
-- eSketch --version
+- esketch --version
