@@ -3,7 +3,7 @@ environment:
   affix: esketch
 
 platform:
-- Win32
+- x86
 - x64
 
 configuration: Release
