@@ -9,9 +9,9 @@ platform:
 configuration: Release
 
 os :
-- Visual Studio 2013
-- Visual Studio 2015
 - Visual Studio 2017
+- Visual Studio 2015
+- Visual Studio 2013
 
 test_script:
 - esketch --version
@@ -43,6 +43,6 @@ deploy:
   draft: false
   prerelease: false
   on:
-   os: "Visual Studio 2017"
+   image: "Visual Studio 2017"
 
 
