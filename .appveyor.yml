@@ -26,7 +26,7 @@ after_build:
 - echo | set /p="%platform%" >>tmpfile.tmp || true
 - set /p target= <tmpfile.tmp
 - echo .%target%.
-- set dir=win32-%platform%
+- set dir=%target%
 - mkdir %dir%
 - copy %affix%.exe %dir%
 - 7z a -ttar -so dummy %dir% | 7z a -si %target%.tar.gz
