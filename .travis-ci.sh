@@ -66,4 +66,6 @@ fi
 echo "Running tests"
 echo "Environment: $(uname -a)"
 
-${TEST_COMMAND}
+make
+./esketch --version
+
