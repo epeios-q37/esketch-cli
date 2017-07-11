@@ -1,16 +1,14 @@
-matrix:
-  include: 
-    - os: linux
-      dist: trusty
-      compiler: g++
-    - os: linux
-      compiler: clang++
-    - os: osx
-      compiler: clang++  
+os: linux
+dist: trusty
+compiler: g++
 
 language: cpp
 
+env:
+  - ARCH=arm
+
 script:
+- "bash -ex .travis-ci.sh"
 - make
 - ./esketch --version
 
