@@ -1,10 +1,7 @@
-os: linux
-dist: trusty
-compiler: g++
-
 language: cpp
 
 env:
+  - ARCH=x64
   - ARCH=arm
   
 sudo: required
