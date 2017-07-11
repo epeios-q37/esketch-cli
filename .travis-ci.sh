@@ -10,7 +10,7 @@ CHROOT_ARCH=armhf
 HOST_DEPENDENCIES="debootstrap qemu-user-static binfmt-support sbuild"
 
 # Debian package dependencies for the chrooted environment
-GUEST_DEPENDENCIES="build-essential git m4 sudo python"
+GUEST_DEPENDENCIES="build-essential git m4 sudo python clang"
 
 # Command used to run the tests
 TEST_COMMAND="make test"
@@ -66,6 +66,6 @@ fi
 echo "Running tests"
 echo "Environment: $(uname -a)"
 
-make
+make CXX=clang++
 ./esketch --version
 
